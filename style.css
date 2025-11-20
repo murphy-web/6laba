@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #a569bd;
+    background-color: #fff8fb;
+}
+
+/* Контейнер */
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Шапка */
+#header {
+    background-color: #f0b7d1;
+    border-bottom: 1px solid #f4a7c5;
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #c46296;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    color: #8b3a62;
+}
+
+.site-title {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.site-title h1 {
+    font-size: 2rem;
+    color: #9b59b6;
+}
+
+/* Основной контент */
+main {
+    padding: 30px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    color: #d174ba;
+    border-bottom: 2px solid #f4a7c5;
+}
+
+/* Таблица */
+#custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#custom-table th,
+#custom-table td {
+    border: 2px solid #e0b0d5;
+    padding: 15px;
+    text-align: left;
+}
+
+#custom-table th {
+    background-color: #f7c8de;
+    color: #4a235a;
+    font-weight: bold;
+}
+
+#custom-table tr:nth-child(even) {
+    background-color: #f9d3e0;
+}
+
+#custom-table tr:nth-child(odd) {
+    background-color: #fdeef4;
+}
+
+/* Форма */
+form div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #8e44ad;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+select,
+textarea,
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #d2b4de;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+/* 👇 добавлено для задания 6 — радиокнопки и чекбоксы */
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #e76d9d;
+    transform: scale(1.2);
+    margin-right: 8px;
+}
+
+/* 👇 стиль для группы радиокнопок */
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+/* 👇 стиль для скрытых блоков с опциями/свойствами */
+.hidden {
+    display: none;
+}
+
+button {
+    background-color: #e76d9d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #c55984;
+}
+
+/* Калькулятор */
+.calc-box {
+    background-color: #fdeef4;
+    border: 2px solid #f4a7c5;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#result {
+    font-weight: bold;
+    color: #8e44ad;
+    margin-top: 10px;
+}
+
+/* Ссылки */
+ol {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #c46296;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #8b3a62;
+}
+
+/* Подвал */
+#footer {
+    background-color: #ffe4f0;
+    text-align: left;
+    padding: 20px;
+    color: #4a235a;
+}
+
+/* Адаптивность */
+@media (min-width: 768px) {
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .menu {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .site-title h1 {
+        font-size: 2.5rem;
+    }
+
+    main {
+        padding: 50px 0;
+    }
+
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .calc-box {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
